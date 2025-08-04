@@ -18,7 +18,7 @@ r=int(input())
 if n<0:
     print("Factorial of this number is undefined")
 else:
-    print("The Factorial of this number is" ,factorial(n))
+    print("The Factorial of this number " ,factorial(n))
 
 if r<0 or n<r or n<0:
     print("Permutation and Combination both does not exist")
@@ -27,3 +27,4 @@ else:
     print("The combination of n and r is",combination(n,r))
 
 # here is my first comment
+# another comment
