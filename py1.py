@@ -1,14 +1,18 @@
+"""This code calculates the factorial of a number, the permutation of n,r, and the combination of n,r"""
 def factorial(n):
+    """Calculates the factorial of a non-negative integer number"""
     output=1
     for i in range(1,n+1):
         output=output*i
     return output
 
 def permutation(n,r):
+    """Calculates the permutation of non-negative integers n,r"""
     final=(factorial(n))/(factorial(n-r))
     return final
 
 def combination(n,r):
+    """Calculates the combination of non-negative integers n,r"""
     result=(factorial(n))/((factorial(n-r))*(factorial(r)))
     return result
 
