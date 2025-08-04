@@ -12,19 +12,21 @@ def combination(n,r):
     result=(factorial(n))/((factorial(n-r))*(factorial(r)))
     return result
 
-n=int(input())
-r=int(input())
+def main():
+    
+    n=int(input())
+    r=int(input())
+    
+    if n<0:
+        print("Factorial of this number is undefined")
+    else:
+        print("The Factorial of this number " ,factorial(n))
+    
+    if r<0 or n<r or n<0:
+        print("Permutation and Combination both does not exist")
+    else:
+        print("The Permutation of n and r is",permutation(n,r))
+        print("The combination of n and r is",combination(n,r))
 
-if n<0:
-    print("Factorial of this number is undefined")
-else:
-    print("The Factorial of this number " ,factorial(n))
-
-if r<0 or n<r or n<0:
-    print("Permutation and Combination both does not exist")
-else:
-    print("The Permutation of n and r is",permutation(n,r))
-    print("The combination of n and r is",combination(n,r))
-
-# here is my first comment
-# another comment
+if __name__ == "__main__":
+    main()
