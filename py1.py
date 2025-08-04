@@ -1,4 +1,7 @@
-"""This code calculates the factorial of a number, the permutation of n,r, and the combination of n,r"""
+"""This code calculates the 
+    -Factorial of a number
+    -The permutation of n,r
+    -The combination of n,r"""
 def factorial(n):
     """Calculates the factorial of a non-negative integer number"""
     output=1
@@ -17,7 +20,7 @@ def combination(n,r):
     return result
 
 def main():
-    
+    """Takes the input n and r then prints"""
     n=int(input())
     r=int(input())
     
